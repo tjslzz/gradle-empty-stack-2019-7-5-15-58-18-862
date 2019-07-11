@@ -9,7 +9,7 @@ public class App {
         String message = "Hello Jerry";
         Person jerry = new Person("Jerry");
 
-        Mobile mobile = new Mobile("JerryLi","black","201516080209");
+//        Mobile mobile = new Mobile("JerryLi","black","201516080209");
 //        mobile.call(message);
 //        mobile.output();
 //        System.out.println();
@@ -26,5 +26,8 @@ public class App {
 
         jerry.user(iphone,message);
         jerry.user(andriod,message);
+
+        jerry.change(iphone);
+        jerry.change(andriod);
     }
 }

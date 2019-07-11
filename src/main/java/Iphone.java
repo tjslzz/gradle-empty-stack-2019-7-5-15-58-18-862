@@ -8,4 +8,8 @@ public class Iphone extends Mobile{
     public void call(String message) {
         System.out.println("<iphone>Message : ["+message+"]");
     }
+
+    public void changeToIphone(){
+        System.out.println("Iphone");
+    }
 }
