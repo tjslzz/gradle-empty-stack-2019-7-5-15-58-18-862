@@ -26,6 +26,8 @@ public class App {
 
         jerry.user(iphone,message);
         jerry.user(andriod,message);
+        IphoneRobot iphoneRobot = new IphoneRobot();
+        iphoneRobot.use(iphone,message);
 
         jerry.change(iphone);
         jerry.change(andriod);

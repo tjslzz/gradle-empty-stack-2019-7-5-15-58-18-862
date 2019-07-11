@@ -1,7 +1,8 @@
 public class Andriod extends Mobile {
     @Override
     public void call(String message) {
-        System.out.println("<andriod>Message : ["+message+"]");
+        if(message.length() > 5) System.out.println("<Andriod>Message cannot be sent");
+        else System.out.println("<andriod>Message : ["+message+"]");
     }
 
     public Andriod(String name, String color, String brand) {
