@@ -1,19 +1,16 @@
 public class Person {
     private String name;
+    private Mobile mobile;
 
     public Person(String name) {
         this.name = name;
     }
-    public void change(Mobile mobile){
-        if(mobile instanceof Iphone){
-            ((Iphone) mobile).changeToIphone();
-        }
-        else if(mobile instanceof Andriod){
-            ((Andriod) mobile).changeToAndriod();
-        }
+
+    public void changeMobile(Mobile mobile){
+        this.mobile = mobile;
     }
 
-    public void user(Mobile mobile, String message){
+    public void use(String message){
         mobile.call(message);
     }
 

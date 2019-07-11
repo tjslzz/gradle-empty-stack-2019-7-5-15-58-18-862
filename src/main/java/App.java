@@ -24,12 +24,15 @@ public class App {
 //        mobile.output();
 //        System.out.println();
 
-        jerry.user(iphone,message);
-        jerry.user(andriod,message);
+        jerry.changeMobile(iphone);
+        jerry.use(message);
+
+        jerry.changeMobile(andriod);
+        jerry.use(message);
+
         IphoneRobot iphoneRobot = new IphoneRobot();
         iphoneRobot.use(iphone,message);
 
-        jerry.change(iphone);
-        jerry.change(andriod);
+        
     }
 }
