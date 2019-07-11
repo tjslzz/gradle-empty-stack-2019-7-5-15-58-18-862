@@ -7,33 +7,37 @@ public class Mobile {
         System.out.println("Message : ["+message+"]");
     }
 
+    public void output(){
+        System.out.println("name: ["+name+"], color: ["+color+"], brand: ["+brand+"]");
+    }
+
     public Mobile(String name, String color, String brand){
         setName(name);
         setColor(color);
         setBrand(brand);
     }
 
-    public String getName() {
+    protected String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    protected void setName(String name) {
         this.name = name;
     }
 
-    public String getColor() {
+    protected String getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    protected void setColor(String color) {
         this.color = color;
     }
 
-    public String getBrand() {
+    protected String getBrand() {
         return brand;
     }
 
-    public void setBrand(String brand) {
+    protected void setBrand(String brand) {
         this.brand = brand;
     }
 }
